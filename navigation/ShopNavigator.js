@@ -8,11 +8,13 @@ import { Ionicons } from "@expo/vector-icons";
 import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs";
 
 import ProductOverviewScreen from "../screens/shop/ProductOverviewScreen";
+import ProductDetailScreen from "../screens/shop/ProductDetailScreen";
 import Colors from "../constants/Colors";
 
 const ProductsNavigator = createStackNavigator(
   {
     ProductsOverview: ProductOverviewScreen,
+    ProductDetail: ProductDetailScreen,
   },
   {
     defaultNavigationOptions: {
