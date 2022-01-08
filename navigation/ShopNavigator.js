@@ -9,12 +9,14 @@ import { createMaterialBottomTabNavigator } from "react-navigation-material-bott
 
 import ProductOverviewScreen from "../screens/shop/ProductOverviewScreen";
 import ProductDetailScreen from "../screens/shop/ProductDetailScreen";
+import CartScreen from "../screens/shop/CartScreen";
 import Colors from "../constants/Colors";
 
 const ProductsNavigator = createStackNavigator(
   {
     ProductsOverview: ProductOverviewScreen,
     ProductDetail: ProductDetailScreen,
+    Cart: CartScreen,
   },
   {
     defaultNavigationOptions: {
@@ -25,7 +27,7 @@ const ProductsNavigator = createStackNavigator(
         fontFamily: "open-sans-bold",
       },
       headerBackTitleStyle: {
-        fontFamily: 'open-sans'
+        fontFamily: "open-sans",
       },
       headerTintColor: Platform.OS === "android" ? "white" : Colors.primary,
     },
